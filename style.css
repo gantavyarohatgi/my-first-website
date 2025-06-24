@@ -16,7 +16,7 @@ header {
   color: white;
   padding: 20px;
   text-align: center;
-  position: sticky;
+  position: static;
   top: 0;
 }
 
@@ -180,4 +180,42 @@ body.dark button {
   border-radius: 6px;
   float: right;
   margin-top: 10px;
+}
+
+/* Default hamburger styles */
+.hamburger {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* Responsive menu (small screens) */
+@media screen and (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background: #222;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  nav a {
+    color: white;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  #theme-toggle {
+    margin-top: 10px;
+  }
 }
