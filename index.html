@@ -37,15 +37,17 @@
   <section id="contact">
     <h2>Contact Me</h2>
     <form id="contact-form">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
+      <form action="https://formspree.io/f/xblyzbbl" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="7" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>      
     </form>
   </section>
 
   <footer>
-    <p>© 2025 Gantavya Rohatgi | Built with ❤️</p>
+    <p>© 2025 Gantavya Rohatgi</p>
   </footer>
 
   <script src="script.js"></script>
