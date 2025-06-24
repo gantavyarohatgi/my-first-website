@@ -4,7 +4,7 @@ function showAlert() {
   
   document.getElementById("contact-form").addEventListener("submit", function(e) {
     e.preventDefault(); // prevents page refresh
-    alert("Thank You for your message.");
+    alert("Thank you for your message.");
     
   });
   
